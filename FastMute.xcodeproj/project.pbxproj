@@ -12,6 +12,11 @@
 		6C22A4BE265398520073D012 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C22A4BD265398520073D012 /* Preview Assets.xcassets */; };
 		6C22A4C1265398520073D012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C22A4BF265398520073D012 /* Main.storyboard */; };
 		6C22A4CA2653997F0073D012 /* VolumeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22A4C92653997F0073D012 /* VolumeManager.swift */; };
+		6C22A4D12653A9480073D012 /* KeyboardShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22A4CC2653A9480073D012 /* KeyboardShortcut.swift */; };
+		6C22A4D22653A9480073D012 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22A4CD2653A9480073D012 /* Key.swift */; };
+		6C22A4D32653A9480073D012 /* KeyboardShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22A4CE2653A9480073D012 /* KeyboardShortcutManager.swift */; };
+		6C22A4D42653A9480073D012 /* KeyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22A4CF2653A9480073D012 /* KeyEvent.swift */; };
+		6C22A4D52653A9480073D012 /* KeyboardShortcutModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22A4D02653A9480073D012 /* KeyboardShortcutModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		6C22A4C2265398520073D012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C22A4C3265398520073D012 /* FastMute.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FastMute.entitlements; sourceTree = "<group>"; };
 		6C22A4C92653997F0073D012 /* VolumeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeManager.swift; sourceTree = "<group>"; };
+		6C22A4CC2653A9480073D012 /* KeyboardShortcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardShortcut.swift; sourceTree = "<group>"; };
+		6C22A4CD2653A9480073D012 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		6C22A4CE2653A9480073D012 /* KeyboardShortcutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutManager.swift; sourceTree = "<group>"; };
+		6C22A4CF2653A9480073D012 /* KeyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyEvent.swift; sourceTree = "<group>"; };
+		6C22A4D02653A9480073D012 /* KeyboardShortcutModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 		6C22A4B52653984C0073D012 /* FastMute */ = {
 			isa = PBXGroup;
 			children = (
+				6C22A4CB2653A9480073D012 /* Keyboard Shortcuts */,
 				6C22A4B62653984C0073D012 /* AppDelegate.swift */,
 				6C22A4C92653997F0073D012 /* VolumeManager.swift */,
 				6C22A4BA265398520073D012 /* Assets.xcassets */,
@@ -72,6 +83,18 @@
 				6C22A4BD265398520073D012 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C22A4CB2653A9480073D012 /* Keyboard Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				6C22A4CC2653A9480073D012 /* KeyboardShortcut.swift */,
+				6C22A4CD2653A9480073D012 /* Key.swift */,
+				6C22A4CE2653A9480073D012 /* KeyboardShortcutManager.swift */,
+				6C22A4CF2653A9480073D012 /* KeyEvent.swift */,
+				6C22A4D02653A9480073D012 /* KeyboardShortcutModifier.swift */,
+			);
+			path = "Keyboard Shortcuts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C22A4D52653A9480073D012 /* KeyboardShortcutModifier.swift in Sources */,
 				6C22A4B72653984C0073D012 /* AppDelegate.swift in Sources */,
+				6C22A4D22653A9480073D012 /* Key.swift in Sources */,
+				6C22A4D42653A9480073D012 /* KeyEvent.swift in Sources */,
+				6C22A4D12653A9480073D012 /* KeyboardShortcut.swift in Sources */,
 				6C22A4CA2653997F0073D012 /* VolumeManager.swift in Sources */,
+				6C22A4D32653A9480073D012 /* KeyboardShortcutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
